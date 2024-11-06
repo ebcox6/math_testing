@@ -2,78 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solving Quadratic Equations Quiz</title>
+    <title>Unit 4 Quiz: Solving Quadratic Equations</title>
     <style>
         body {
+            background-color: #f0f8ff;
             font-family: Arial, sans-serif;
-            margin: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
+            color: #ff4500;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
         }
         .question {
             margin-bottom: 20px;
         }
-        .question label {
-            display: block;
-            margin-bottom: 5px;
+        label {
+            font-weight: bold;
         }
-        .submit-button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
             background-color: #4CAF50;
             color: white;
+            padding: 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1rem;
         }
-        .submit-button:hover {
+        button:hover {
             background-color: #45a049;
+        }
+        .resources {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .resources a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .resources a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>Quiz 4-3: Solving Quadratic Equations</h1>
-   
-    <!-- Problem 1 -->
-    <div class="question">
-        <label for="q1">1. Solve by factoring: 3x² - 3x - 60 = 0</label>
-        <input type="text" id="q1" placeholder="Your answer">
+    <div class="container">
+        <h1>Unit 4 Quiz: Solving Quadratic Equations</h1>
+        <form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="post">
+            <div class="question">
+                <label for="q1">1. Solve by factoring: 23x - 3x - 60 = 0</label>
+                <input type="text" name="entry.123456789" id="q1" required>
+            </div>
+            <div class="question">
+                <label for="q2">2. Solve by factoring: 24x + 31 - 3x = 0</label>
+                <input type="text" name="entry.987654321" id="q2" required>
+            </div>
+            <div class="question">
+                <label for="q3">3. Solve by square roots: 9x^2 - 18 = 7</label>
+                <input type="text" name="entry.111222333" id="q3" required>
+            </div>
+            <!-- More questions can be added here similarly -->
+            <button type="submit">Submit Answers</button>
+        </form>
+        <div class="resources">
+            <h3>Resources</h3>
+            <a href="#">Factoring Quadratics Guide</a>
+            <a href="#">Quadratic Formula Explained</a>
+            <a href="#">Practice Problems</a>
+        </div>
     </div>
-
-    <!-- Problem 2 -->
-    <div class="question">
-        <label for="q2">2. Solve by factoring: 4x² + 3x = 3x</label>
-        <input type="text" id="q2" placeholder="Your answer">
-    </div>
-
-    <!-- Problem 3 -->
-    <div class="question">
-        <label for="q3">3. Solve by square roots: 9x² - 18 = 7</label>
-        <input type="text" id="q3" placeholder="Your answer">
-    </div>
-
-    <!-- Problem 4 -->
-    <div class="question">
-        <label for="q4">4. Solve by square roots: (1/3)x² - 7 = 43</label>
-        <input type="text" id="q4" placeholder="Your answer">
-    </div>
-
-    <!-- Problem 5 -->
-    <div class="question">
-        <label for="q5">5. Solve by completing the square: 2x² + 8x + 134 = 0</label>
-        <input type="text" id="q5" placeholder="Your answer">
-    </div>
-
-    <!-- Problem 6 -->
-    <div class="question">
-        <label for="q6">6. Solve by the quadratic formula: x² + 12x = 7x + 1</label>
-        <input type="text" id="q6" placeholder="Your answer">
-    </div>
-
-    <button class="submit-button">Submit Answers</button>
 </body>
 </html>
